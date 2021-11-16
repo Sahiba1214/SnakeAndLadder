@@ -1,14 +1,15 @@
-﻿namespace SnakeAndLadder
+﻿using System;
+
+namespace SnakeAndLadder
 {
-    class SnakeAndLadder
-    
+    class Program
     {
-        public int playerPosition = 0;
-        Random random = new Random();
-        public int DieRolling()
+        static void Main(string[] args)
         {
-            int roll = random.Next(1, 7);
-            return roll;
+            Console.WriteLine("Welcome TO SNAKE AND LADDER Game");
+            SnakeAndLadder playerOne = new SnakeAndLadder();
+            playerOne.DieRolling();
+            playerOne.PlayerCheck();
         }
     }
 }
